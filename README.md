@@ -1,4 +1,4 @@
-# UK-BIAS: The UK Network of BioImage Analysts
+# The UK Network of BioImage Analysts
 
 ## Virtual bioimage analysis service \- open to all
 
