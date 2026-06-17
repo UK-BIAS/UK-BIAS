@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/white.css" />
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+		<style>
+			.container {
+			  display: flex;
+			  justify-content: space-around;
+			  width: 100%;
+			  align-items: center;
+			}
+			.container div {
+			  flex: 1;
+			  text-align: center;
+			}
+			.container img {
+			  max-width: 250px;
+			  height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Introducing UK-BIAS</h2>
+					<div>The UK Network of BioImage Analysts</div>
+					<div><img src="https://lh7-rt.googleusercontent.com/formsz/AN7BsVBdxBlSRed0efZtECTAX-7fwgu1YMXfDkJUz9vIYSssnrfPz6oVbWCT6ho9Pl9mqOBUGlWv-BBSvzZvf0Qa-dFHmOkrj7wIUK-NsSEl06kyqY-V_SKH84IyESHgmZLUmGYuHYkUuhHANTMeZVHhXYUa615fZtv1ny77LklnCNsQX4IA6IrxGE9tqqTxVFANt89d-5ChrsFPykOdGCQ=w138?key=oXM0engxjn5Jfkcos142Cw"/></div>
+				</section>
+				<section data-transition="fade">
+					<div style="text-align: left;"><h2>Why UK-BIAS?</h2></div>
+					<div class="r-stack">
+						<img
+							class="fragment fade-out"
+							data-fragment-index="0"
+							src="./assets/images/FBIAS.png"
+							width="75%"
+						/>
+						<img
+							class="fragment current-visible"
+							data-fragment-index="0"
+							src="https://github.com/zarr-developers/zarr-illustrations-falk-2022/blob/main/300dpi/kits-deluge-300dpi.png?raw=true"
+							width="50%"
+						/>
+						<img
+							class="fragment current-visible"
+							src="https://github.com/zarr-developers/zarr-illustrations-falk-2022/blob/main/300dpi/bea-computes-300dpi.png?raw=true"
+							width="55%"
+						/>
+						<img
+							class="fragment fade-up"
+							src="https://lh7-rt.googleusercontent.com/formsz/AN7BsVBdxBlSRed0efZtECTAX-7fwgu1YMXfDkJUz9vIYSssnrfPz6oVbWCT6ho9Pl9mqOBUGlWv-BBSvzZvf0Qa-dFHmOkrj7wIUK-NsSEl06kyqY-V_SKH84IyESHgmZLUmGYuHYkUuhHANTMeZVHhXYUa615fZtv1ny77LklnCNsQX4IA6IrxGE9tqqTxVFANt89d-5ChrsFPykOdGCQ=w138?key=oXM0engxjn5Jfkcos142Cw"
+						/>
+					</div>
+					<div class="fragment fade-up">The UK Network of BioImage Analysts to the rescue!</div>
+				</section>
+				<section data-background-image="./assets/images/UK_BIAS_Members.png" data-background-size="85%" data-background-position="bottom right" data-transition="fade">
+					<div style="
+							position: relative;
+							top: -280px;
+							left: -60px;
+							width: 50%;
+							margin-left: 0;
+							box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5), 0 5px 25px rgba(0, 0, 0, 0.2);
+							background-color: rgba(0, 0, 0, 0.75);
+							color: #fff;
+							padding: 20px;
+							text-align: left;
+						">
+						<h2 style="color: #fff; margin: 0;">Who are we?</h2>
+					</div>
+				</section>
+				<section data-transition="fade">
+					<div style="text-align: left;">
+						<h2>What do we do?</h2>
+					</div>
+					<div class="container">
+						<div><img class="fragment fade-right" src="./assets/images/FIJI.png"/></div>
+						<div><img class="fragment fade-down" src="./assets/images/QuPath.png"/></div>
+						<div><img class="fragment fade-left" src="./assets/images/Python.png"/></div>
+					</div>
+					<div class="container">
+						<div><img class="fragment fade-right" src="./assets/images/ilastik.png"/></div>
+						<div><img class="fragment fade-up" src="./assets/images/cellprofiler.png"/></div>
+						<div><img class="fragment fade-left" src="./assets/images/napari.png"/></div>
+					</div>
+				</section>
+				<section data-transition="fade">
+					<h2 align="left">Where will we do it?</h2>
+					<div class="r-stack">
+						<img
+							class="fragment fade-out"
+							data-fragment-index="0"
+							src="./assets/images/BAND.png"
+						/>
+						<img
+							class="fragment current-visible"
+							data-fragment-index="0"
+							src="./assets/images/Binder.png"
+						/>
+						<img
+							class="fragment current-visible"
+							src="./assets/images/DAaaS.png"
+						/>
+						<img
+							class="fragment"
+							src="./assets/images/UKRI-HPC.png"
+							width="75%"
+						/>
+					</div>
+				</section>
+				<section data-transition="fade">
+					<section>
+					<h2 align="left">How do we work?</h2>
+						<ol style="margin-top: 150px; margin-bottom: 150px;">
+							<li class="fragment fade-in-then-semi-out">Initial Consultation</li>
+							<li class="fragment fade-in-then-semi-out">Pilot Project Proposal</li>
+							<li class="fragment">Scope Longer Term Collaboration</li>
+						</ol>
+					</section>
+					<section>
+					<h2 align="left">How do we work?</h2>
+						<ul style="margin-top: 130px; margin-bottom: 130px;">
+							<li class="fragment fade-in-then-semi-out">All Outputs FAIR</li>
+							<li class="fragment fade-in-then-semi-out">Projects prioritised based on...
+								<ul>
+									<li>Feasibility</li>
+									<li>Duration</li>
+									<li>Reproducibility</li>
+								</ul>
+							<li class="fragment">Authorship expected</li>
+						</ul>
+					</section>
+				</section>
+				<section data-transition="fade">
+					<h2 align="left">How can you work with us?</h2>
+					<p>Get in touch!</p>
+					<div><img src="./assets/images/QR-code.png" width="30%"/></div>
+					<p>uk-bias.github.io/UK-BIAS</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/zoom.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes],
+			});
+		</script>
+	</body>
+</html>
