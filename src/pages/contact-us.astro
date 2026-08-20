@@ -7,50 +7,49 @@ const heading = "Contact us";
 ---
 
 <Base pageTitle={pageTitle} heading={heading}>
-  <div class="items-start">
-    <div class="flex-col">
-      <p class="mb-6 font-bold">
-        If you have a general enquiry, please use the form below.
-      </p>
+  <div class="flex-col items-start mr-1">
+    <p class="mb-6 font-bold">
+      If you have a general enquiry, please use the form below.
+    </p>
 
-      <p class="mb-8">
-        To submit a project proposal, please click <a
-          href={`${import.meta.env.BASE_URL}/submit-project`}
-          class="text-blue-500">here</a>
-      </p>
+    <p class="mb-8">
+      To submit a project proposal, please click <a
+        href={`${import.meta.env.BASE_URL}/submit-project`}
+        class="text-blue-500">here</a
+      >
+    </p>
 
-      <h2 class="text-2xl text-[#465786] mt-10 mb-4">Contact details</h2>
-      <form action="https://formspree.io/f/mdaqabgd" method="POST">
-        <FormItem
-          type="input"
-          variableID="q-full-name"
-          variableName="Your name:"
-          displayText="Your name:"
-        />
-        <FormItem
-          type="input"
-          variableID="q-email"
-          variableName="Your email:"
-          displayText="Your email:"
-        />
+    <h2 class="text-2xl text-[#465786] mt-10 mb-4">Contact details</h2>
+    <form action="https://formspree.io/f/mdaqabgd" method="POST">
+      <FormItem
+        type="input"
+        variableID="q-full-name"
+        variableName="Your name:"
+        displayText="Your name:"
+      />
+      <FormItem
+        type="input"
+        variableID="q-email"
+        variableName="Your email:"
+        displayText="Your email:"
+      />
 
-        <h2 class="text-2xl text-[#465786] mt-10 mb-4">Enquiry</h2>
-        <FormItem
-          type="textarea"
-          variableID="q-enquiry"
-          variableName="Please enter your enquiry below"
-          displayText="Please enter your enquiry below"
-          rows="12"
-        />
+      <h2 class="text-2xl text-[#465786] mt-10 mb-4">Enquiry</h2>
+      <FormItem
+        type="textarea"
+        variableID="q-enquiry"
+        variableName="Please enter your enquiry below"
+        displayText="Please enter your enquiry below"
+        rows="12"
+      />
 
-        <div class="flex align-center">
-          <button
-            type="submit"
-            class="w-64 mt-10 mb-10 ml-auto mr-auto p-2 text-white rounded-2xl bg-[#ABB1C4] hover:bg-[#E8C3C9] transition"
-            >Submit</button
-          >
-        </div>
-      </form>
-    </div>
+      <div class="flex align-center">
+        <button
+          type="submit"
+          class="w-64 mt-10 mb-10 ml-auto mr-auto p-2 text-white rounded-2xl bg-[#ABB1C4] hover:bg-[#E8C3C9] transition"
+          >Submit</button
+        >
+      </div>
+    </form>
   </div>
 </Base>

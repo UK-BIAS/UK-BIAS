@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 const { bio } = Astro.props;
 ---
 
-<div class="items-start p-4 mb-4 bg-gray-200 min-h-56 rounded-2xl">
+<div class="items-start p-4 mb-4 mr-1 bg-gray-200 min-h-56 rounded-2xl">
   <Image
     src={bio.data.photo}
     alt={`Bio picture for ${bio.data.firstname}`}

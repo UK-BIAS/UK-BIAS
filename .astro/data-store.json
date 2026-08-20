@@ -43,7 +43,7 @@
   "src/content/bios/Anneliese_Jarman.md",
   [13],
   "../../assets/profile-pictures/Anneliese_Jarman.png",
-  "9517e25b0151d43c",
+  "f443af00468e1e60",
   { "html": 16, "metadata": 17 },
   "\u003Cp>Anneliese is the Image Analyst at the Babraham Institute in Cambridge. She has a background in building microscopes for applications from fundamental biology to disease detection. The nuances of data from new microscopes, and the need to compare outputs with established imaging modalities, led her into image analysis with a focus on image quality and multimodal comparison in Fiji and MATLAB. A love of the craft has since expanded this to encompass quantitative analysis across a broad range of light microscopy techniques (including FLIM), on samples from whole organisms to subcellular structures, using diverse image analysis software and custom scripting.\u003C/p>\n",
   {
@@ -77,7 +77,7 @@
   "src/content/bios/Dave_Barry.md",
   [33],
   "../../assets/profile-pictures/Dave_Barry.png",
-  "6468226aeb7c4b60",
+  "01200ba6ac2afc4d",
   { "html": 36, "metadata": 37 },
   "\u003Cp>Dave leads the Crick’s BioImage Analysis Team and is also Deputy Head of the Advanced Light Microscopy STP, bringing expertise from electronic engineering and a PhD in quantitative imaging, along with six years of postdoctoral research in cell motility. He directs a team developing scalable analytical pipelines powered by machine learning and AI for biomedical imaging across 100+ research groups at the Crick. He advocates for FAIR data, open-source methodologies, and community-focused training to remove barriers to rigorous and reproducible quantitative analysis.\u003C/p>\n",
   {
@@ -111,7 +111,7 @@
   "src/content/bios/George_Merces.md",
   [53],
   "../../assets/profile-pictures/George_Merces.png",
-  "f5c23f9ff2b5ad2c",
+  "a30711e70a162bdd",
   { "html": 56, "metadata": 57 },
   "\u003Cp>George leads the Newcastle University Image Analysis Unit, coming from a background of open-source hardware development and translational medicine. His experience ranges from single-molecule tracking, live cell image analysis, tissue organisation, spatial analysis, and preclinical imaging modalities. Focusing on open-access solutions to complex problems, George and his team build protocols, pipelines, scripts, and GUIs to facilitate image analysis.\u003C/p>\n",
   {
@@ -145,7 +145,7 @@
   "src/content/bios/Graeme_Ball.md",
   [73],
   "../../assets/profile-pictures/Graeme_Ball.png",
-  "1a0d45e92c416a0a",
+  "70de60ad546e0dd6",
   { "html": 76, "metadata": 77 },
   "\u003Cp>Graeme is the Image Analyst at the Dundee Imaging Facility based in the Faculty of Life Sciences, University of Dundee. He has 15 years experience in this role, having started as the Image Analysis Specialist in the Micron Oxford imaging facility in 2011 before moving to the Dundee in 2014. Graeme has a background in Natural Sciences, a PhD in structural biology and a longstanding interest in computers and technology. He worked as a postdoc in the lab of Ilan Davis where he became interested in microscopy and the analysis of microscopy data. Graeme has worked on a variety of problems over the years and is well versed in the tools and techniques of bioimage data analysis.\u003C/p>\n",
   {
@@ -179,7 +179,7 @@
   "src/content/bios/James_Crichton.md",
   [93],
   "../../assets/profile-pictures/James_Crichton.png",
-  "da3c7ef3d3fd5aba",
+  "1de2a974cad323c8",
   { "html": 96, "metadata": 97 },
   "\u003Cp>James is Deputy Director of Bioimaging at the University of Exeter and leads Imaging and Image Analysis at the RILD building, supporting a broad range of translational biomedical projects. His background in reproductive biology sparked a long-standing love of microscopy, spanning super-resolution imaging, high-throughput screening, and digital pathology. He is passionate about developing scalable, reproducible analysis workflows using open-source tools and helping researchers extract meaningful insights from complex imaging datasets. Outside the lab he enjoys staying active and exploring.\u003C/p>\n",
   {
@@ -213,7 +213,7 @@
   "src/content/bios/Laura_Murphy.md",
   [113],
   "../../assets/profile-pictures/Laura_Murphy.png",
-  "22d329d16decc21c",
+  "beb5a9051a515f2b",
   { "html": 116, "metadata": 117 },
   "\u003Cp>Laura is a Bioimage Analyst at the Institute of Genetics and Cancer in Edinburgh, specializing in quantitative data extraction from 2D and 3D light microscopy. Her daily toolkit heavily features QuPath, Python, and FIJI, alongside a lasting fondness for CellProfiler from her time visiting the Broad Institute. Outside the lab, if she isn’t defending her “most posts read” milestone on forum.image.sc, Laura is likely chasing her small child and rotating through hobbies like wild swimming, sourdough baking and knitting.\u003C/p>\n",
   {
@@ -247,7 +247,7 @@
   "src/content/bios/Marie_Held.md",
   [133],
   "../../assets/profile-pictures/Marie_Held.png",
-  "a09c4c705b023b6f",
+  "04f05cb4efc70589",
   { "html": 136, "metadata": 137 },
   "\u003Cp>Marie is the Bioimage Analyst at the Centre for Cell Imaging, a Shared Research Facility at the University of Liverpool. With a background in applied physics, she has developed extensive expertise in light microscopy and has worked in bioimage analysis since 2019. She supports researchers in designing robust image analysis workflows, enabling quantitative analysis of microscopy data, and promoting the adoption of FAIR principles for imaging data, analysis workflows, and scientific software. Outside of work, Marie enjoys photography and digital illustration, when home life allows.\u003C/p>\n",
   {
@@ -280,7 +280,7 @@
   "src/content/bios/Stefania_Marcotti.md",
   [152],
   "../../assets/profile-pictures/Stefania_Marcotti.png",
-  "6be8a114d1c0358e",
+  "1db7849e75da1787",
   { "html": 155, "metadata": 156 },
   "\u003Cp>Stefania works in the Crick’s BioImage Analysis Team as the BioImage Analysis trainer, coordinating and delivering training workshops for researchers wanting to master their image analysis skills. She also assists the rest of the team with developing image analysis pipelines for various applications, with a strong focus on light microscopy data and open-source software.\u003C/p>\n",
   {
@@ -310,13 +310,13 @@
   "Cross",
   "Wolfson BioImaging Facility, Bristol",
   "__ASTRO_IMAGE_../../assets/profile-pictures/Stephen_Cross.png",
-  "Stephen works at the University of Bristol's Wolfson BioImaging Facility, where he is the resident bioimage analyst. He can typically be found developing custom analysis workflows, offering advice on software or creating new analysis tools, such as the ModularImageAnalysis (MIA) plugin for Fiji.  Stephen tends to work with light microscopy images, but also dabbles with EM and macroscopic samples.",
+  "Stephen works at the University of Bristol's Wolfson BioImaging Facility, where he is the resident bioimage analyst. He can typically be found developing custom analysis workflows, offering advice on software or creating new analysis tools, such as the ModularImageAnalysis (MIA) plugin for Fiji. Stephen tends to work with light microscopy images, but also dabbles with EM and macroscopic samples.",
   "src/content/bios/Stephen_Cross.md",
   [172],
   "../../assets/profile-pictures/Stephen_Cross.png",
-  "b5aaec8874561eb7",
+  "8ad7a5bdf471cc93",
   { "html": 175, "metadata": 176 },
-  "\u003Cp>Stephen works at the University of Bristol’s Wolfson BioImaging Facility, where he is the resident bioimage analyst. He can typically be found developing custom analysis workflows, offering advice on software or creating new analysis tools, such as the ModularImageAnalysis (MIA) plugin for Fiji.  Stephen tends to work with light microscopy images, but also dabbles with EM and macroscopic samples.\u003C/p>\n",
+  "\u003Cp>Stephen works at the University of Bristol’s Wolfson BioImaging Facility, where he is the resident bioimage analyst. He can typically be found developing custom analysis workflows, offering advice on software or creating new analysis tools, such as the ModularImageAnalysis (MIA) plugin for Fiji. Stephen tends to work with light microscopy images, but also dabbles with EM and macroscopic samples.\u003C/p>\n",
   {
     "headings": 177,
     "localImagePaths": 178,
@@ -367,5 +367,5 @@
   "astro-version",
   "7.0.7",
   "content-config-digest",
-  "2494aa325bfcf83f"
+  "384af3c6cdb0be43"
 ]
