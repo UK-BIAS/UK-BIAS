@@ -34,7 +34,7 @@ const heading = "Submit a project";
         type="textarea"
         variableID="q-general-background"
         displayText="General background:"
-        defaultText="Please provide a brief explanation of the biological question you are attempting to answer (max 100 words). Please include some information on the nature of your samples and the system used for image acquisition."
+        defaultText="Please provide a brief explanation of the biological question you are attempting to answer (max 100 words). Please include some information on the nature of your samples, the system used for image acquisition and approximate image sizes (resolution) and format."
         rows="6"
       />
       <FormItem
@@ -63,6 +63,15 @@ const heading = "Submit a project";
         displayText="Going forward, how many images do you anticipate having?"
         rows="1"
       />
+      
+      <FormItem 
+        type="textarea" 
+        variableID="q-file-link" 
+        displayText="(Optional) Example files:" 
+        defaultText="Providing one or two example files could help us assess your project.  If you have such files, please can you upload them to an online server (e.g. WeTransfer) and provide the access URL here."
+        rows="3"  
+      />
+
 
       <div class="flex align-center">
         <button

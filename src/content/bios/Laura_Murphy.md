@@ -4,4 +4,5 @@ lastname: Murphy
 affiliation: IGC Advanced Imaging Resource, Edinburgh
 photo: ../../assets/profile-pictures/Laura_Murphy.png
 ---
+
 Laura is a Bioimage Analyst at the Institute of Genetics and Cancer in Edinburgh, specializing in quantitative data extraction from 2D and 3D light microscopy. Her daily toolkit heavily features QuPath, Python, and FIJI, alongside a lasting fondness for CellProfiler from her time visiting the Broad Institute. Outside the lab, if she isn't defending her "most posts read" milestone on forum.image.sc, Laura is likely chasing her small child and rotating through hobbies like wild swimming, sourdough baking and knitting.
