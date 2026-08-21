@@ -18,5 +18,10 @@
       "type": "string"
     }
   },
-  "required": ["firstname", "lastname", "affiliation", "photo"]
+  "required": [
+    "firstname",
+    "lastname",
+    "affiliation",
+    "photo"
+  ]
 }
