@@ -32,16 +32,23 @@ const heading = "Submit a project";
       <h2 class="text-2xl text-[#465786] mt-10 mb-4">Project details</h2>
       <FormItem
         type="textarea"
-        variableID="q-general-background"
-        displayText="General background:"
-        defaultText="Please provide a brief explanation of the biological question you are attempting to answer (max 100 words). Please include some information on the nature of your samples, the system used for image acquisition and approximate image sizes (resolution) and format."
-        rows="6"
+        variableID="q-biological-question"
+        displayText="Biological question (max. 100 words):"
+        defaultText="Please provide a brief explanation of the biological question you are attempting to answer."
+        rows="5"
+      />
+      <FormItem
+      type="textarea"
+      variableID="q-wish-to-quantify"
+      displayText="What exactly do you wish to quantify? (max. 100 words)"
+      defaultText="Please list the key measurements you wish to extract from your images.  For example, cell area in control and treated samples."
+      rows="5"
       />
       <FormItem
         type="textarea"
-        variableID="q-wish-to-quantify"
-        displayText="What exactly do you wish to quantify?"
-        defaultText="Please list the key measurements you wish to extract from your images.  For example, cell area in control and treated samples."
+        variableID="q-technical-info"
+        displayText="Technical information (max. 100 words):"
+        defaultText="Please provide some information on the system used for image acquisition, number of conditions, approximate image sizes (resolution) and file format."
         rows="5"
       />
       <FormItem
@@ -50,26 +57,13 @@ const heading = "Submit a project";
         displayText="Are there any known shortcomings?"
         defaultText="For example, photobleaching, mechanical drift or bleedthrough between channels."
         rows="5"
-      />
-      <FormItem
-        type="textarea"
-        variableID="q-image-count-1"
-        displayText="Do you currently have any images? If so, how many?"
-        rows="1"
-      />
-      <FormItem
-        type="textarea"
-        variableID="q-image-count-2"
-        displayText="Going forward, how many images do you anticipate having?"
-        rows="1"
-      />
-      
+      />      
       <FormItem 
         type="textarea" 
         variableID="q-file-link" 
         displayText="(Optional) Example files:" 
         defaultText="Providing one or two example files could help us assess your project.  If you have such files, please can you upload them to an online server (e.g. WeTransfer) and provide the access URL here."
-        rows="3"  
+        rows="5"  
       />
 
 
