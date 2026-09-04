@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets";
 const { bio } = Astro.props;
+const roleVisible = bio.data.role
 ---
 
 <div class="items-start p-4 mb-4 mr-1 bg-gray-200 min-h-56 rounded-2xl">
@@ -10,7 +11,7 @@ const { bio } = Astro.props;
     class="float-left justify-center h-48 mr-4 mb-2 w-auto rounded-xl"
   />
     <h2 class="mt-2 md:mt-0 text-2xl">
-      {`${bio.data.firstname} ${bio.data.lastname}`}
+      {`${bio.data.firstname} ${bio.data.lastname}`} {roleVisible && `(${bio.data.role})`}
     </h2>
     <h3 class="mb-2">{`${bio.data.affiliation}`}</h3>
     <p class="text-justify">{bio.body}</p>

@@ -1,6 +1,7 @@
 ---
 firstname: Dave
 lastname: Barry
+role: Lead
 affiliation: The Francis Crick Institute, London
 photo: ../../assets/profile-pictures/Dave_Barry.png
 ---

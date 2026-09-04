@@ -8,6 +8,9 @@
     "lastname": {
       "type": "string"
     },
+    "position": {
+      "type": "string"
+    },
     "affiliation": {
       "type": "string"
     },

@@ -1,6 +1,7 @@
 ---
 firstname: Marie
 lastname: Held
+role: Deputy
 affiliation: Centre for Cell Imaging, Liverpool
 photo: ../../assets/profile-pictures/Marie_Held.png
 ---

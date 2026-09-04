@@ -8,6 +8,7 @@ const bios = defineCollection({
     z.object({
       firstname: z.string(),
       lastname: z.string(),
+      role: z.string().optional(),
       affiliation: z.string(),
       photo: image(),
     }),

@@ -1,6 +1,7 @@
 ---
 firstname: Laura
 lastname: Murphy
+role: Deputy
 affiliation: IGC Advanced Imaging Resource, Edinburgh
 photo: ../../assets/profile-pictures/Laura_Murphy.png
 ---
