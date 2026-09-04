@@ -1,6 +1,6 @@
 # The UK Network of BioImage Analysts
 
-<center><img src="assets/logos/UK-BIAS_red-blue.png" width="20%"></center>
+<center><img src="src/assets/logos/UK-BIAS_logo.svg" width="20%"></center>
 
 ## Virtual bioimage analysis service \- open to all
 
