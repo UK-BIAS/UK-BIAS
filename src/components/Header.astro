@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import MenuButton from "./MenuButton.astro";
+import UkBiasLogo from "../assets/logos/UK-BIAS_logo.svg";
+import UkBiasLogoText from "../assets/logos/UK-BIAS_logotext.svg";
+import EbiLogo from "../assets/logos/EBI_logo.svg";
+---
+
+<header class="sticky bg-gray-100 top-0 padding-0 flex items-center h-18">
+  <MenuButton />
+  <Image src={UkBiasLogo} alt="UK-BIAS logo" class="ml-4 md:ml-6 h-8 md:h-10 w-auto" />
+  <a
+    href={`${import.meta.env.BASE_URL}`}
+    class="ml-2 md:ml-6 text-4xl text-[#465786] hover:text-[#BE3E49] transition duration-200"
+    ><Image
+      src={UkBiasLogoText}
+      alt="UK-BIAS logo text"
+      class="h-4 md:h-6 w-auto"
+    /></a
+  >
+  <a href="https://www.eurobioimaging.eu/" class="ml-auto mr-4">
+    <Image src={EbiLogo} alt="EuroBioImaging logo" class="h-10 md:h-12 w-auto"/>
+    </a
+  >
+</header>

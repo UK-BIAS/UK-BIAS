@@ -1,0 +1,13 @@
+---
+import { Image } from "astro:assets";
+const { link, text, logo } = Astro.props;
+---
+
+<div class="flex items-center -ml-9 h-12 mb-1">
+  <Image src={logo} alt="Link logo" class="mr-3 h-auto w-6" />
+  <a
+    href={link}
+    class="rounded-md text-xl text-[#465786] hover:text-[#BE3E49] transition duration-200"
+    >{text}</a
+  >
+</div>

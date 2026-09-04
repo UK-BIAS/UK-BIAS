@@ -1,0 +1,19 @@
+---
+const {type, variableID, displayText, defaultText, rows} = Astro.props;
+---
+<div class="text-left">
+  <label for={variableID} class="text-[#465786] mb-4">{displayText}</label>
+</div>
+
+{type === "input" && (
+  <input type="text" id={variableID} name={displayText} class="rounded-lg bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 text-[#465786] mb-4 transition" value={defaultText}/>
+)}
+
+{type === "textarea" && (
+   <textarea
+        id={variableID}
+        name={displayText}
+        class="rounded-lg bg-white outline-solid outline-gray-400 hover:outline-[#BE3E49] focus-within:outline-[#BE3E49] outline-2 w-full p-2 mt-2 mb-6 text-[#465786] mb-4 transition"
+        placeholder={defaultText}
+        rows={rows}></textarea>
+)}

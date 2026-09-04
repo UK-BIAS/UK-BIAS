@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100ch;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  overscroll-behavior-y: none;
+}
+
+@media (max-width: 48rem) {
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 300ms ease;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  :has(.menu[aria-expanded="true"]) .sidebar {
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 48rem) {
+  .menu {
+    display: none;
+  }
+}
+
+.sidebar {
+  padding-left: 3rem;
+}
+
+.sidebar li {
+  position: relative;
+  padding-bottom: 1.5rem;
+  list-style: none;
+}
+
+/* Circle */
+.sidebar li::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 0.35rem;
+  width: 1rem;
+  height: 1rem;
+  border: 3px solid black;
+  border-radius: 50%;
+  z-index: 1;
+  background-color: var(--bullet-colour);
+}
+
+/* Connecting line */
+.sidebar li::after {
+  content: "";
+  position: absolute;
+  left: -1.6rem;
+  top: 1.25rem;
+  bottom: -0.5rem;
+  width: 3px;
+  background: black;
+}
+
+/* Don't draw the line after the last item */
+.sidebar li:last-child::after {
+  display: none;
+}

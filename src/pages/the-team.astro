@@ -1,0 +1,14 @@
+---
+import { getCollection } from "astro:content";
+const bios = await getCollection("bios");
+
+import Base from "../layouts/Base.astro";
+import "../styles/global.css";
+import Bio from "../components/Bio.astro";
+
+const pageTitle = "Meet the team";
+---
+
+<Base pageTitle={pageTitle} heading={pageTitle}>
+  {bios.map((bio) => <Bio bio={bio} />)}
+</Base>

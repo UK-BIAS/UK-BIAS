@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "affiliation": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "firstname",
+    "lastname",
+    "affiliation",
+    "photo"
+  ]
+}

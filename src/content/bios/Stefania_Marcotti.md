@@ -1,0 +1,8 @@
+---
+firstname: Stefania
+lastname: Marcotti
+affiliation: The Francis Crick Institute, London
+photo: ../../assets/profile-pictures/Stefania_Marcotti.png
+---
+
+Stefania works in the Crick's BioImage Analysis Team as the BioImage Analysis trainer, coordinating and delivering training workshops for researchers wanting to master their image analysis skills. She also assists the rest of the team with developing image analysis pipelines for various applications, with a strong focus on light microscopy data and open-source software.

@@ -1,0 +1,36 @@
+---
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+const { pageTitle, heading, subHead } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href={`${import.meta.env.BASE_URL}/favicon.svg`}
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>UK-BIAS</title>
+  </head>
+  <body class="bg-gray-100">
+    <Header />
+    <Sidebar />
+    <div class="main-content md:ml-64 pt-6 ml-2 mr-2 min-h-[calc(100vh-4.5rem)] text-justify md:text-left">
+      <h1 class="text-4xl text-[#465786]">{heading}</h1>
+      <h2 class="text-3xl text-[#BE3E49] mb-4">{subHead}</h2>
+      <div class="mt-8 text-md text-justify">
+        <slot />
+      </div>
+      <Footer />
+    </div>
+    <script>
+      import "../scripts/menu.js";
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+---
+import ExtLink from "./ExtLink.astro";
+import NavLink from "./NavLink.astro";
+
+import BlueskyLogo from "../assets/logos/Bluesky_logo.svg";
+import GitHubLogo from "../assets/logos/GitHub_logo.svg";
+import LinkedInLogo from "../assets/logos/LinkedIn_logo.png";
+---
+
+<nav
+  class="flex flex-col sidebar fixed overflow-auto absolute ml-3 pt-6 p-2 h-lvh w-58 bg-gray-100 z-100"
+>
+  <ul class="mb-0">
+    <NavLink link="/" text="About" colour="#465786" />
+    <NavLink link="/the-team/" text="The team" colour="#ABB1C4" />
+    <NavLink link="/funding/" text="Funding" colour="#FFFFFF" />
+    <NavLink link="/submit-project/" text="Submit a project" colour="#E8C3C9" />
+    <NavLink link="/contact-us/" text="Contact us" colour="#BE3E49" />
+  </ul>
+
+  <ul class="mt-auto mb-36">
+    <ExtLink
+      link="https://bsky.app/profile/uk-bias.bsky.social"
+      text="Bluesky"
+      logo={BlueskyLogo}
+    />
+    <ExtLink
+      link="https://github.com/UK-BIAS"
+      text="GitHub"
+      logo={GitHubLogo}
+    />
+    <ExtLink
+      link="https://www.linkedin.com/company/uk-bias/"
+      text="LinkedIn"
+      logo={LinkedInLogo}
+    />
+  </ul>
+</nav>
