@@ -4,7 +4,7 @@ const { link, text, colour } = Astro.props;
 
 <li style={`--bullet-colour:${colour};`}>
   <a
-    href={`${import.meta.env.BASE_URL}${link}`}
+    href={`${link}`}
     class="block rounded-md text-xl text-[#465786] hover:text-[#BE3E49] transition duration-200"
     >{text}</a
   >
