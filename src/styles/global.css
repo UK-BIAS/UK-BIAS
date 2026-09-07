@@ -21,14 +21,12 @@ body {
     transform: translateX(-100%);
     transition: transform 300ms ease;
     pointer-events: none;
-    visibility: hidden;
   }
 
   :has(.menu[aria-expanded="true"]) .sidebar {
     transform: translateX(0);
     transition: transform 300ms ease;
     pointer-events: auto;
-    visibility: visible;
   }
 }
 
