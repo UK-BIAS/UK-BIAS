@@ -10,9 +10,9 @@ const roleVisible = bio.data.role
     alt={`Bio picture for ${bio.data.firstname}`}
     class="float-left justify-center h-48 mr-4 mb-2 w-auto rounded-xl"
   />
-    <h2 class="mt-2 md:mt-0 text-2xl">
+    <h2 class="mt-2 md:mt-0 text-2xl md:text-2xl text-left">
       {`${bio.data.firstname} ${bio.data.lastname}`} {roleVisible && `(${bio.data.role})`}
     </h2>
-    <h3 class="mb-2">{`${bio.data.affiliation}`}</h3>
+    <h3 class="mb-2"><i>{`${bio.data.affiliation}`}</i></h3>
     <p class="text-justify">{bio.body}</p>
 </div>
