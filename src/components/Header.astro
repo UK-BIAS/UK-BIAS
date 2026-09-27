@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 import { Image } from "astro:assets";
 import MenuButton from "./MenuButton.astro";
 import UkBiasLogo from "../assets/logos/UK-BIAS_logo.svg";
@@ -10,7 +12,7 @@ import EbiLogo from "../assets/logos/EBI_logo.svg";
   <MenuButton />
   <Image src={UkBiasLogo} alt="UK-BIAS logo" class="ml-4 md:ml-6 h-8 md:h-10 w-auto" />
   <a
-    href={`${import.meta.env.BASE_URL}`}
+    href={`${base}`}
     class="ml-2 md:ml-6 text-4xl text-[#465786] hover:text-[#BE3E49] transition duration-200"
     ><Image
       src={UkBiasLogoText}

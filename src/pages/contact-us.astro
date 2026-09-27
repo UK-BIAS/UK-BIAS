@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 import Base from "../layouts/Base.astro";
 import FormItem from "../components/FormItem.astro";
 
@@ -14,7 +16,7 @@ const heading = "Contact us";
 
     <p class="mb-8">
       To submit a project proposal, please click <a
-        href={`/submit-project`}
+        href={`${base}/submit-project`}
         class="text-blue-500">here</a
       >
     </p>
