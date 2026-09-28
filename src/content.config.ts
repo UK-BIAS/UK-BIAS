@@ -8,6 +8,7 @@ const articles = defineCollection({
     z.object({
       date_posted: z.date(),
       title: z.string(),
+      sub_title: z.string().optional(),
       photo: image(),
     }),
 });

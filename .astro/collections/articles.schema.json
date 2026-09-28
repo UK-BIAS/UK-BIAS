@@ -9,6 +9,9 @@
     "title": {
       "type": "string"
     },
+    "sub_title": {
+      "type": "string"
+    },
     "photo": {
       "type": "string"
     },

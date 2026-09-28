@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 import { getCollection } from "astro:content";
 const articles = await getCollection("articles");
 
