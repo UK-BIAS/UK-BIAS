@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+
 import ExtLink from "./ExtLink.astro";
 import NavLink from "./NavLink.astro";
 
@@ -11,11 +13,12 @@ import LinkedInLogo from "../assets/logos/LinkedIn_logo.png";
   class="flex flex-col sidebar fixed overflow-auto absolute pl-3 pt-6 p-2 h-lvh w-58 bg-gray-100 z-100"
 >
   <ul class="mb-0">
-    <NavLink link="/" text="About" colour="#465786" />
-    <NavLink link="/the-team/" text="The team" colour="#ABB1C4" />
-    <NavLink link="/funding/" text="Funding" colour="#FFFFFF" />
-    <NavLink link="/submit-project/" text="Submit a project" colour="#E8C3C9" />
-    <NavLink link="/contact-us/" text="Contact us" colour="#BE3E49" />
+    <NavLink link={`${base}/`} text="About" colour="#0A2165" />
+    <NavLink link={`${base}/news-and-events/`} text="News and events" colour="#495586" />
+    <NavLink link={`${base}/the-team/`} text="The team" colour="#AAAEC4" />
+    <NavLink link={`${base}/funding/`} text="Funding" colour="#EAC5C7" />
+    <NavLink link={`${base}/submit-project/`} text="Submit a project" colour="#C65C63" />
+    <NavLink link={`${base}/contact-us/`} text="Contact us" colour="#B72B35" />
   </ul>
 
   <ul class="mt-auto mb-36">

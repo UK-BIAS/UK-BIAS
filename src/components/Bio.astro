@@ -1,10 +1,11 @@
 ---
 import { Image } from "astro:assets";
+import Card from "../layouts/Card.astro";
 const { bio } = Astro.props;
 const roleVisible = bio.data.role
 ---
 
-<div class="items-start p-4 mb-4 mr-1 bg-gray-200 min-h-56 rounded-2xl">
+<Card>
   <Image
     src={bio.data.photo}
     alt={`Bio picture for ${bio.data.firstname}`}
@@ -15,4 +16,4 @@ const roleVisible = bio.data.role
     </h2>
     <h3 class="mb-2 text-left"><i>{`${bio.data.affiliation}`}</i></h3>
     <p class="text-justify">{bio.body}</p>
-</div>
+</Card>

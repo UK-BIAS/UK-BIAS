@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "date_posted": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "image_text": {
+      "type": "string"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "date_posted",
+    "title",
+    "image",
+    "image_text"
+  ]
+}
