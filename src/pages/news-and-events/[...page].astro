@@ -1,0 +1,60 @@
+---
+import "../../styles/global.css";
+
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+import Base from "../../layouts/Base.astro";
+import Article from "../../components/Article.astro";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const articles = (await getCollection("articles")).sort(
+    (a, b) => b.data.date_posted.valueOf() - a.data.date_posted.valueOf(),
+  );
+  return paginate(articles, { pageSize: 3 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const pageTitle = "News and events";
+---
+
+<Base pageTitle={pageTitle} heading={pageTitle}>
+  {page.data.map((article) => <Article article={article} />)}
+
+  <div class="flex align-center text-center">
+    {
+      page.url.prev ? (
+        <a
+          href={page.url.prev}
+          class="w-32 mt-10 mb-10 ml-auto mr-2 p-2 text-white rounded-2xl bg-[#465786] hover:bg-[#BE3E49] transition cursor-pointer"
+        >
+          Previous
+        </a>
+      ) : (
+        <a
+          href={page.url.prev}
+          class="w-32 mt-10 mb-10 ml-auto mr-2 p-2 text-white rounded-2xl bg-[#465786] hover:bg-[#BE3E49] transition cursor-pointer opacity-40 pointer-events-none"
+        >
+          Previous
+        </a>
+      )
+    }
+
+    {
+      page.url.next ? (
+        <a
+          href={page.url.next}
+          class="w-32 mt-10 mb-10 ml-2 mr-auto p-2 text-white rounded-2xl bg-[#465786] hover:bg-[#BE3E49] transition cursor-pointer"
+        >
+          Next
+        </a>
+      ) : (
+        <a
+          href={page.url.next}
+          class="w-32 mt-10 mb-10 ml-2 mr-auto p-2 text-white rounded-2xl bg-[#465786] hover:bg-[#BE3E49] transition cursor-pointer opacity-40 pointer-events-none"
+        >
+          Next
+        </a>
+      )
+    }
+  </div>
+</Base>
