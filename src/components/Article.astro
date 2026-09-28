@@ -6,30 +6,38 @@ const { article } = Astro.props;
 const { Content } = await render(article);
 ---
 
-<Card>
-  <Image
-    src={article.data.photo}
-    alt={`Article photo`}
-    class="float-left justify-center h-48 mr-4 mb-2 w-auto rounded-xl"
-  />
-  <h2 class="mt-2 md:mt-0 text-2xl md:text-2xl text-left">
-    {`${article.data.title}`}
-  </h2>
-  <h3 class="mb-2 text-left"><i>{`${article.data.sub_title}`}</i></h3>
-  <div class="markdown">
-    <Content />
-  </div>
-  <style>
+<style>
   .markdown :global(ul),
   .markdown :global(ol) {
     display: flow-root;
     padding-inline-start: 1.5rem;
     list-style-position: outside;
   }
-  .markdown :global(ul) { list-style-type: disc; }
-  .markdown :global(ol) { list-style-type: decimal; }
+  .markdown :global(ul) {
+    list-style-type: disc;
+  }
+  .markdown :global(ol) {
+    list-style-type: decimal;
+  }
+  .markdown :global(a) {
+    color: #465786;
+  }
 </style>
-  <p class="mt-2 mb-2 text-left">
+
+<Card>
+  <Image
+    src={article.data.image}
+    alt={article.data.image_text}
+    class="float-left justify-center h-48 mr-4 mb-2 w-auto rounded-xl"
+  />
+  <h2 class="mt-2 md:mt-0 text-2xl md:text-2xl text-left">
+    {`${article.data.title}`}
+  </h2>
+  <h3 class="mb-2 text-left"><i>{`${article.data.sub_title}`}</i></h3>
+  <div class="mt-4 markdown">
+    <Content />
+  </div>
+  <p class="mt-4 mb-2 text-left text-gray-400">
     <i
       >Posted {
         `${article.data.date_posted.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}`

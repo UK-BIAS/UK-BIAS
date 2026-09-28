@@ -12,7 +12,10 @@
     "sub_title": {
       "type": "string"
     },
-    "photo": {
+    "image": {
+      "type": "string"
+    },
+    "image_text": {
       "type": "string"
     },
     "$schema": {
@@ -22,6 +25,7 @@
   "required": [
     "date_posted",
     "title",
-    "photo"
+    "image",
+    "image_text"
   ]
 }

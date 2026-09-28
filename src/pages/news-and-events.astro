@@ -2,7 +2,9 @@
 const base = import.meta.env.BASE_URL;
 
 import { getCollection } from "astro:content";
-const articles = await getCollection("articles");
+const articles = (await getCollection("articles")).sort(
+  (a, b) => b.data.date_posted.valueOf() - a.data.date_posted.valueOf(),
+);
 
 import Base from "../layouts/Base.astro";
 import "../styles/global.css";
