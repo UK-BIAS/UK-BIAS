@@ -23,12 +23,9 @@ const heading = "Submit a project";
 
     <h2 class="text-2xl text-[#465786] mt-10 mb-4 ">Contact details</h2>
     <form action="https://formspree.io/f/mdaqabgd" method="POST">
-      <FormItem
-        type="input"
-        variableID="q-full-name"
-        displayText="Your name:"
+      <FormItem type="input" variableID="q-full-name" displayText="Your name:"
       />
-      <FormItem type="input" variableID="q-email" displayText="Your email:" />
+      <FormItem type="input" variableID="q-email" displayText="Your email (required):" required="required"/>
       <FormItem type="input" variableID="q-institution" displayText="Your institution:" />
 
       <h2 class="text-2xl text-[#465786] mt-10 mb-4">Project details</h2>
